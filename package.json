@@ -1,0 +1,29 @@
+{
+  "name": "compress-and-resize-img",
+  "version": "1.0.0",
+  "description": "A library for resizing and compressing images based on canvas.",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "scripts": {
+    "build": "tsup src/index.ts",
+    "start": "npm run build -- --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FireAga1n/compress-and-resize-img.git"
+  },
+  "keywords": [],
+  "author": "lijingyong",
+  "license": "ISC",
+  "exports": {
+    "default": "./dist/index.cjs",
+    "require": "./dist/index.cjs",
+    "import": "./dist/index.mjs",
+    "node": "./dist/index.cjs"
+  },
+  "devDependencies": {
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  }
+}
